@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>My Form</title> 
+</head> 
+<body> 
+    <h1>My Form</h1> 
+    <form method="post" action="/" enctype="multipart/form-data"> 
+        {{ form.csrf_token }} 
+        <p>{{form.action1.label }} {{form.action1() }}</p>
+        <p>{{ form.time1.label }} {{ form.time1() }}</p>
+        <p>{{form.action2.label }} {{form.action2() }}</p>
+        <p>{{ form.time2.label }} {{ form.time2() }}</p>
+        <p>{{form.action3.label }} {{form.action3() }}</p>
+        <p>{{ form.time3.label }} {{ form.time3() }}</p>
+        <p>{{form.action4.label }} {{form.action4() }}</p>
+        <p>{{ form.time4.label }} {{ form.time4() }}</p>
+        <p>{{form.action5.label }} {{form.action5() }}</p>
+        <p>{{ form.time5.label }} {{ form.time5() }}</p> 
+        <p><input type="submit" value="Submit"></p> 
+    </form> 
+</body> 
+</html>
